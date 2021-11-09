@@ -84,3 +84,12 @@ enum month1 {
 
 // month1.jan = 12000
 console.log(month1)
+
+
+// type data union, atau tipe data yang bisa dimasukan lebih dari satu namun bukan berarti semunya seperti any
+
+let phone: string | number | boolean;
+phone = 4342342
+phone = '44245354'
+phone = true
+// phone = { id: 'fdfd'}    // error karna obj tidak terdaftar

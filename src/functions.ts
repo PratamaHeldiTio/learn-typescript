@@ -38,8 +38,27 @@ console.log(perkalian(4, 4))
 
 // function as type custom type
 
-type Add = (valA: number, valB: number) => number
+// type Add = (valA: number, valB: number) => number
 
-const add: Add = (valA: number, valB: number) => {
+// const add: Add = (valA: number, valB: number) => {
+//   return valA + valB
+// }
+
+
+// default parameter, jika kita menggunakan default parameter maka ketika kita tidak menetapkan argumen maka tidak eror melainkan otomatis default parameter digunakan
+const edd = (valA: number, valB: number = 5): number => {
   return valA + valB
 }
+
+console.log(edd(2, 6))
+console.log(edd(2))
+
+// optional parameter menggunakan tanda ?
+// ketika parameter tidak diisi dengan argument dia tidak error namun parameter berisi undefined
+// yang perlu diperhatikan menggunakan optional parameter ketika return value number akan terjadi error karena undefined tidak bisa ditambahkan dengan number
+
+const addFamilyAge = (valA: number, valB?: number): string => {
+  return valA + " " + valB
+}
+
+console.log(addFamilyAge(22, 223))
