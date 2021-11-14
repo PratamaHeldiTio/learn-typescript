@@ -6,7 +6,7 @@
   "scripts": {
     "tsc": "rmdir /Q /S build && tsc",
     "ts": "rmdir /Q /S build && tsc -w",
-    "dev": "nodemon ./build/functions.js"
+    "dev": "nodemon ./build/class.js"
   },
   "keywords": [],
   "author": "",
